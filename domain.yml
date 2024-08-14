@@ -1,0 +1,113 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - hobby
+  - ask_introduction
+  - ask_education
+  - ask_skills
+  - ask_projects
+  - ask_location
+  - ask_about_vidurx
+  - ask_contact
+
+responses:
+  utter_greet:
+    - text: "Hey! How are you?"
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+  utter_hobby:
+    - text: |
+        Programming is more than just a profession for me—it's a passion and a hobby. I enjoy solving problems and creating innovative solutions through code.
+    - text: |
+        I love programming! It's both a hobby and a way for me to bring ideas to life. Whether it's building something new or refining my skills, I find it incredibly rewarding.
+    - text: |
+        Absolutely, I enjoy coding! It's something I do not only as part of my work but also for fun. There's always something new to learn and create.
+    - text: |
+        Yes, programming is one of my favorite hobbies. It allows me to explore my creativity and continuously challenge myself.
+
+  utter_ask_introduction:
+    - text: |
+        Hello! I'm a recent graduate with a BSc. in Computer Science and Information Technology (CSIT) from Tribhuvan University. I'm a full-stack developer specializing in the PERN stack, and I'm currently learning Python to enhance my skills in chatbot development. I’m from the beautiful hills of Ilam, Nepal, and I'm passionate about creating innovative software solutions.
+    - text: |
+        Hi there! I recently completed my BSc. CSIT from Tribhuvan University and have been working as a full-stack developer with a focus on the PERN stack. I'm also diving into Python to build smarter chatbots like VidurX. I hail from Ilam, Nepal, where I enjoy blending technology with creativity.
+    - text: |
+        Greetings! I'm a software developer who just graduated with a degree in CSIT from Tribhuvan University. My expertise lies in the PERN stack, and I'm currently expanding my skills in Python and chatbot development. I'm originally from Ilam, Nepal, a place that inspires my work in technology.
+
+  utter_ask_education:
+    - text: "I'm a recent graduate with a BSc. in Computer Science and Information Technology (CSIT) from Tribhuvan University."
+
+  utter_ask_skills:
+    - text: |
+        I'm proficient in full-stack development, particularly with the PERN stack (PostgreSQL, Express.js, React, Node.js). I'm also expanding my skills in Python for advanced chatbot development.
+    - text: |
+        My core skills include full-stack development using the PERN stack, and I'm currently honing my Python expertise to build smarter, more interactive chatbots.
+    - text: |
+        I specialize in the PERN stack for web development, and I'm also delving into Python to enhance my ability to create intelligent software solutions.
+    - text: |
+        My technical skills are focused on full-stack development with the PERN stack, and I'm also passionate about learning Python to innovate in the field of chatbot development.
+
+  utter_ask_projects:
+    - text: |
+        I've worked on various projects ranging from web applications to chatbots. One of my key projects is my personal website, where I showcase my work and skills.
+    - text: |
+        My portfolio includes several web development projects using the PERN stack, and I'm currently working on VidurX, a chatbot designed to enhance user interaction on my website.
+    - text: |
+        I've developed multiple web apps using the PERN stack, and my latest endeavor is VidurX, a chatbot that integrates with my personal website to provide users with a smarter experience.
+    - text: |
+        My projects span across web development and chatbot creation. I'm particularly proud of VidurX, a chatbot I'm developing to provide a more interactive experience on my site.
+
+  utter_ask_location:
+    - text: |
+        I'm from the beautiful hills of Ilam, Nepal. It's a place known for its stunning landscapes and vibrant culture.
+    - text: |
+        I hail from Ilam, Nepal, a region famous for its scenic beauty and lush tea gardens. It's a wonderful place that inspires my work.
+    - text: |
+        My roots are in Ilam, Nepal, a picturesque town nestled in the hills. The tranquility and natural beauty of Ilam have always fueled my creativity.
+    - text: |
+        I'm proud to be from Ilam, Nepal, a place renowned for its breathtaking views and rich cultural heritage. It's where I find inspiration for my work.
+
+  utter_ask_about_vidurx:
+    - text: |
+        VidurX is a chatbot I'm developing to enhance user interaction on my website. It's designed to provide smart, intuitive responses based on the user's queries.
+    - text: |
+        VidurX is my latest project—a chatbot that helps users navigate my website and get the information they need quickly and efficiently.
+    - text: |
+        VidurX is an AI-powered chatbot that I've created to make my website more interactive and user-friendly. It's built using Rasa and integrates seamlessly with my site.
+    - text: |
+        VidurX is a smart chatbot developed to assist visitors on my website. It's designed to understand user inquiries and provide helpful responses in real-time.
+
+  utter_ask_contact:
+    - text: |
+        You can reach me via email at neerajbhttri@gmail.com, or connect with me on LinkedIn.
+    - text: |
+        Feel free to contact me at neerajbhttri@gmail.com. I'm also available on LinkedIn if you'd like to connect professionally.
+    - text: |
+        You can get in touch with me through email: neerajbhttri@gmail.com, or find me on LinkedIn for more professional inquiries.
+    - text: |
+        I'd love to hear from you! Email me at neerajbhttri@gmail.com, or connect with me on LinkedIn to stay in touch.
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

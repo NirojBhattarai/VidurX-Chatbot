@@ -1,0 +1,117 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: asking about hobby
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: hobby
+  - action: utter_hobby
+
+- story: asking_about_introduction
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_introduction
+  - action: utter_ask_introduction
+
+- story: asking_about_skills
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_skills
+  - action: utter_ask_skills
+
+- story: asking_about_projects
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_projects
+  - action: utter_ask_projects
+
+- story: asking_about_location
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_location
+  - action: utter_ask_location
+
+- story: asking_about_vidurx
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_about_vidurx
+  - action: utter_ask_about_vidurx
+
+- story: asking_about_contact
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_contact
+  - action: utter_ask_contact
+
+- story: multiple_queries
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_introduction
+  - action: utter_ask_introduction
+  - intent: ask_education
+  - action: utter_ask_education
+  - intent: ask_skills
+  - action: utter_ask_skills
+  - intent: ask_projects
+  - action: utter_ask_projects
+  - intent: ask_location
+  - action: utter_ask_location
+  - intent: ask_about_vidurx
+  - action: utter_ask_about_vidurx
+
+- story: repeated_queries
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_about_vidurx
+  - action: utter_ask_about_vidurx
+  - intent: ask_about_vidurx
+  - action: utter_ask_about_vidurx
+
+- story: user_changes_topic
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_location
+  - action: utter_ask_location
+  - intent: ask_skills
+  - action: utter_ask_skills
+
+
+

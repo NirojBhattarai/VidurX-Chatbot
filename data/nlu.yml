@@ -1,0 +1,157 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: hobby
+  examples: |
+    - What is your hobby?
+    - what do you like to do?
+    - Do you like coding?
+    - Is programming your hobby?
+
+- intent: ask_introduction
+  examples: |
+    - Tell me about yourself
+    - Who are you?
+    - Can you introduce yourself?
+    - What do you do?
+    - What's your name?
+
+- intent: ask_education
+  examples: |
+    - Where did you study?
+    - What did you major in?
+    - Tell me about your education
+    - Where did you graduate from?
+    - What degree do you have?
+
+- intent: ask_skills
+  examples: |
+    - What technologies do you work with?
+    - What are your skills?
+    - What programming languages do you know?
+    - What stack do you use?
+    - Are you a software developer?
+
+- intent: ask_projects
+  examples: |
+    - Can you tell me about your projects?
+    - What have you worked on?
+    - Show me your portfolio
+    - Tell me about your work experience
+    - What kind of projects have you done?
+
+- intent: ask_location
+  examples: |
+    - Where are you from?
+    - Tell me about your hometown
+    - Where do you live?
+    - What's your background?
+    - Are you from Nepal?
+
+- intent: ask_about_vidurx
+  examples: |
+    - What is VidurX?
+    - Tell me about this chatbot
+    - What can VidurX do?
+    - Who created you?
+    - What is your purpose?
+
+- intent: ask_contact
+  examples: |
+    - How can I contact you?
+    - What's your email address?
+    - How do I reach you?
+    - Can I get in touch with you?
+    - What's your LinkedIn profile?
+
+
+
